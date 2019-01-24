@@ -943,7 +943,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="node" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
@@ -1223,7 +1223,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Security trimming cannot be set programmatically—it is set in the configuration for the provider.  
+ Security trimming cannot be set programmatically - it is set in the configuration for the provider.  
   
  ]]></format>
         </remarks>

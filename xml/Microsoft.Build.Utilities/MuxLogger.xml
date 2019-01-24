@@ -167,8 +167,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the Parameters attribute, required by the <see langword="ILogger" /> interface.</summary>
-        <value>Returns the Parameters attribute.</value>
+        <summary>Gets or sets the Parameters attribute, required by the <see langword="ILogger" /> interface.</summary>
+        <value>The Parameters attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +243,8 @@
       <Docs>
         <param name="submissionId">The submission ID of the logger to be removed.</param>
         <summary>Removes the specified logger from the MuxLogger.</summary>
-        <returns>Returns <see langword="true" /> if the method is successful in removing the logger, otherwise, returns <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the method is successful in removing the logger; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,8 +267,8 @@
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the Verbosity attribute, required by the <see langword="ILogger" /> interface.</summary>
-        <value>Returns the Verbosity attribute.</value>
+        <summary>Gets or sets the Verbosity attribute, required by the <see langword="ILogger" /> interface.</summary>
+        <value>The Verbosity attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

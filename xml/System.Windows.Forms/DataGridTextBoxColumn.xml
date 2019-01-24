@@ -412,7 +412,7 @@
         <param name="rowNum">The row number in this column being edited.</param>
         <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
         <param name="readOnly">A value indicating whether the column is a read-only. <see langword="true" /> if the value is read-only; otherwise, <see langword="false" />.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The text to display in the control.</param>
         <param name="cellIsVisible">A value indicating whether the cell is visible. <see langword="true" /> if the cell is visible; otherwise, <see langword="false" />.</param>
         <summary>Prepares a cell for editing.</summary>
         <remarks>
@@ -599,10 +599,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1226,9 +1223,9 @@
       </Parameters>
       <Docs>
         <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> that supplies the data.</param>
-        <param name="displayText">The text that will be displayed in the cell.</param>
+        <param name="displayText">The text to display in the cell.</param>
         <param name="rowNum">The index of the row to update.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The text to display in the cell.</param>
         <summary>Updates the user interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -443,7 +443,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value of the request's <see langword="If-Unmatched-Since" /> header.</summary>
-        <value>The request's <see langword="If-Unmatched-Since" /> header..</value>
+        <value>The request's <see langword="If-Unmatched-Since" /> header.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
         <ReturnType>System.UriTemplateMatch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.UriTemplateMatch" /> instance created during the dispatch of the incoming Web request.</summary>
+        <summary>Gets or sets the <see cref="T:System.UriTemplateMatch" /> instance created during the dispatch of the incoming Web request.</summary>
         <value>A <see cref="T:System.UriTemplateMatch" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -17,6 +17,9 @@
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipes</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -61,6 +64,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -88,6 +94,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -117,6 +126,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -144,6 +156,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -173,6 +188,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -200,6 +218,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -229,6 +250,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -256,6 +280,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -285,6 +312,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -312,6 +342,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -341,6 +374,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -369,22 +405,15 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
       <MemberValue>1048576</MemberValue>
       <Docs>
-        <summary>Specifies whether the application can wait for a pipe handle to synchronize with the completion of an I/O operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Synchronize value is automatically set when allowing access to the pipe and automatically excluded when denying access to the pipe.  
-  
- The right to create a pipe requires this value. Note that if you do not explicitly set this value when you create a pipe, the value will be set automatically for you.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies whether the application can wait for a pipe handle to synchronize with the completion of an I/O operation. This value is automatically set when allowing access to the pipe and automatically excluded when denying access to the pipe. The right to create a pipe requires this value. Note that if you do not explicitly set this value when you create a pipe, the value will be set automatically for you.</summary>
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -406,6 +435,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -435,6 +467,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -462,6 +497,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
@@ -491,6 +529,9 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>
       </ReturnValue>
@@ -518,6 +559,9 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeAccessRights</ReturnType>

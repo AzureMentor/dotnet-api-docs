@@ -115,7 +115,7 @@
   
  You can also supply a cancellation token by calling the <xref:System.Threading.Tasks.Task.Wait%28System.Threading.CancellationToken%29> and  <xref:System.Threading.Tasks.Task.Wait%28System.Int32%2CSystem.Threading.CancellationToken%29> methods. If the  token's <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property is `true` or becomes `true` while the <xref:System.Threading.Tasks.Task.Wait%2A> method is executing, the method throws an <xref:System.OperationCanceledException>.  
   
- In some cases, you may want to wait for the first of a series of executing tasks to complete, but don't care which task it is.  For this purpose, you can call one of the overloads of the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method.  The following example creates three tasks, each of which sleeps for an interval determine by a random number generator. The <xref:System.Threading.Tasks.Task.WaitAny%28System.Threading.Tasks.Task%5B%5D%29> method waits for the first task to complete. The example then displays information about the status of all three tasks.  
+ In some cases, you may want to wait for the first of a series of executing tasks to complete, but don't care which task it is.  For this purpose, you can call one of the overloads of the <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> method.  The following example creates three tasks, each of which sleeps for an interval determine by a random number generator. The <xref:System.Threading.Tasks.Task.WaitAny%28System.Threading.Tasks.Task%5B%5D%29> method waits for the first task to complete. The example then displays information about the status of all three tasks.  
   
  [!code-csharp[System.Threading.Tasks.Task#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/WhenAny1.cs#10)]
  [!code-vb[System.Threading.Tasks.Task#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/WaitAny1.vb#10)]  
@@ -461,7 +461,7 @@
       <Docs>
         <param name="action">The delegate that represents the code to execute in the task.</param>
         <param name="state">An object representing data to be used by the action.</param>
-        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that that the new task will observe.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that the new task will observe.</param>
         <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task" /> with the specified action, state, and options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -559,7 +559,7 @@
       <Docs>
         <param name="action">The delegate that represents the code to execute in the task.</param>
         <param name="state">An object representing data to be used by the action.</param>
-        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that that the new task will observe..</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that the new task will observe.</param>
         <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
         <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task" /> with the specified action, state, and options.</summary>
         <remarks>
@@ -2844,7 +2844,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  Task IDs are assigned on-demand and do not necessarily represent the order in which task instances are created. Note that although collisions are very rare, task identifiers are not guaranteed to be unique.  
   
- To get the task ID of the currently executing task from within code that that task is executing, use the <xref:System.Threading.Tasks.Task.CurrentId%2A> property.  
+ To get the task ID of the currently executing task from within code that task is executing, use the <xref:System.Threading.Tasks.Task.CurrentId%2A> property.  
   
  ]]></format>
         </remarks>

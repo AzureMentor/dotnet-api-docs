@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_MethodDataCollection#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodDataCollection/cs/MethodDataCollection.cs#1)]
  [!code-vb[wminet_MethodDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodDataCollection/vb/MethodDataCollection.vb#1)]  
@@ -115,8 +115,8 @@
         <param name="methodName">The name of the method to add.</param>
         <param name="inParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
         <param name="outParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the output parameters to the method.</param>
-        <param name="inParams">To be added.</param>
-        <param name="outParams">To be added.</param>
+        <param name="inParams">The <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
+        <param name="outParams">The <see cref="T:System.Management.ManagementBaseObject" /> holding the output parameters to the method.</param>
         <summary>Adds a <see cref="T:System.Management.MethodData" /> to the <see cref="T:System.Management.MethodDataCollection" />. This overload will add a new method with the specified parameter objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

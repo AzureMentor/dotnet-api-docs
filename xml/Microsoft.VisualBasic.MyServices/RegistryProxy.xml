@@ -15,10 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -597,7 +594,7 @@
  -or-  
   
  <paramref name="valueName" /> is longer than the maximum length allowed (255 characters).</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access..</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only and thus cannot be written to; for example, it is a root-level node, or it has not been opened with write access.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <altmember cref="T:Microsoft.Win32.RegistryValueKind" />

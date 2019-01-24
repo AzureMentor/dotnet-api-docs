@@ -617,7 +617,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       </ReturnValue>
       <Docs>
         <summary>Gets the lock token of the instance owner bound to the current instance handle.</summary>
-        <value>The lock token bound to the current instance handle, or Guid.Empty if the handle isn't bound to an instance owner.</value>
+        <value>The lock token bound to the current instance handle, or <see cref="F:System.Guid.Empty" /> if the handle isn't bound to an instance owner.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -655,7 +655,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null – this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
+ The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null - this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
   
  ]]></format>
         </remarks>
@@ -709,7 +709,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <param name="key">The instance key identifier for the key whose metadata was read. Must not be Guid.Empty.</param>
         <param name="metadata">The metadata as a dictionary of <see cref="T:System.Xml.Linq.XName" /> and <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> objects.</param>
         <param name="complete">
-          <see langword="True" /> if the metadata represents all of the metadata associated to the instance key, otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the metadata represents all of the metadata associated to the instance key; otherwise, <see langword="false" />.</param>
         <summary>Indicates that the persistence provider has successfully read some instance key metadata for a key associated to the current instance from the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -743,7 +743,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <Docs>
         <param name="metadata">The metadata as a dictionary of <see cref="T:System.Xml.Linq.XName" /> and <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> objects.</param>
         <param name="complete">
-          <see langword="True" /> if the metadata represents all of the metadata associated to the instance, otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the metadata represents all of the metadata associated to the instance; otherwise, <see langword="false" />.</param>
         <summary>Indicates that the persistence provider has successfully read some instance metadata for the current instance from the instance store.</summary>
         <remarks>To be added.</remarks>
       </Docs>

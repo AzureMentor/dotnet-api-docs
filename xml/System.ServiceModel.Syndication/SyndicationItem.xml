@@ -22,6 +22,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a feed item, for example an RSS <see langword="&lt;item&gt;" /> or an Atom <see langword="&lt;entry&gt;" />.</summary>
     <remarks>
@@ -107,6 +112,11 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
@@ -487,11 +497,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base Uniform Resource Identifier (URI) for the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
+        <summary>Gets or sets the base Uniform Resource Identifier (URI) for the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
         <value>The base URI of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -621,11 +639,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content of the syndication item.</summary>
+        <summary>Gets or sets the content of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance that contains the content of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -777,11 +803,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the copyright information for the syndication item.</summary>
+        <summary>Gets or sets the copyright information for the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance that represents copyright information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1052,6 +1086,11 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.Rss20ItemFormatter</ReturnType>
       </ReturnValue>
@@ -1142,11 +1181,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the ID of the syndication item.</summary>
+        <summary>Gets or sets the ID of the syndication item.</summary>
         <value>The ID of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1199,11 +1246,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the last updated time for the syndication item.</summary>
+        <summary>Gets or sets the last updated time for the syndication item.</summary>
         <value>A <see cref="T:System.DateTimeOffset" /> instance that represents the time the syndication item was last updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1309,6 +1364,11 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationItem</ReturnType>
       </ReturnValue>
@@ -1412,11 +1472,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the publish date for the syndication item.</summary>
+        <summary>Gets or sets the publish date for the syndication item.</summary>
         <value>A <see cref="T:System.DateTimeOffset" /> object that represents the publish date for the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1555,17 +1623,25 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the source feed of the syndication item.</summary>
+        <summary>Gets or sets the source feed of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance where the syndication item is located.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is not automatically set when you add a <xref:System.ServiceModel.Syndication.SyndicationItem> to a <xref:System.ServiceModel.Syndication.SyndicationFeed>—you must explicitly set it. When serialized to Atom 1.0 or RSS 2.0, this property is written to a `<source>` element. The contents of that element vary depending on the format you serialize to.  
+ This property is not automatically set when you add a <xref:System.ServiceModel.Syndication.SyndicationItem> to a <xref:System.ServiceModel.Syndication.SyndicationFeed> - you must explicitly set it. When serialized to Atom 1.0 or RSS 2.0, this property is written to a `<source>` element. The contents of that element vary depending on the format you serialize to.  
   
    
   
@@ -1603,11 +1679,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the summary of the syndication item.</summary>
+        <summary>Gets or sets the summary of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> that contains a summary of the item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1656,11 +1740,19 @@
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the title of the syndication item.</summary>
+        <summary>Gets or sets the title of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> object that contains the title of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -113,9 +113,16 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
        ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
-          --or--<p /><paramref name="start" /> is outside the bounds of the array. <p />
-          --or--<p /><paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
+
+
+-or-
+
+<paramref name="start" /> is outside the bounds of the array.
+
+-or-
+
+<paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
         <exception cref="T:System.ArrayTypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>
@@ -143,7 +150,7 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">The destination .</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of a <see cref="T:System.Memory`1" /> object into a destination <see cref="T:System.Memory`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -637,7 +644,7 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of the memory into a destination <see cref="T:System.Memory`1" /> instance.</summary>
         <returns>
           <see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>

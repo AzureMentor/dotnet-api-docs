@@ -196,10 +196,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -565,10 +562,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -842,10 +836,7 @@ private static void GetDataTypes(String connectiongString) {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -957,13 +948,21 @@ private static void GetDataTypes(String connectiongString) {
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+
+-or-
   
  The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
   
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1043,12 +1042,20 @@ private static void GetDataTypes(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1112,12 +1119,20 @@ private static void GetDataTypes(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1466,10 +1481,7 @@ private static void GetCredits(String connectiongString) {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1512,10 +1524,7 @@ private static void GetCredits(String connectiongString) {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1565,10 +1574,7 @@ private static void GetCredits(String connectiongString) {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1669,23 +1675,23 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
-  
--   binary  
-  
--   image  
-  
--   varbinary  
-  
--   udt</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: binary, image, varbinary, or udt.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1775,27 +1781,23 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
-  
--   char  
-  
--   nchar  
-  
--   ntext  
-  
--   nvarchar  
-  
--   text  
-  
--   varchar</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: char, nchar, ntext, nvarchar, text, or varchar.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -2060,12 +2062,20 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Trying to read a previously read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
       </Docs>
@@ -2115,11 +2125,19 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Trying to read a previously read column in sequential mode.  
+
+-or-
   
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>

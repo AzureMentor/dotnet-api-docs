@@ -183,7 +183,7 @@
   
 -   An <xref:System.Xml.XmlReader> object with the appropriate associated <xref:System.Xml.XmlResolver> object settings can be used to resolve entities or other references in XML data.  
   
--   If the <xref:System.Xml.XmlReader> object is positioned on a leaf node that is not valid for the root level of a document—for example, a white space or attribute node—the <xref:System.Xml.XmlReader> object continues to read until it is positioned on a node that can be used for the root. The <xref:System.Xml.XPath.XPathDocument> begins loading at this point.  
+-   If the <xref:System.Xml.XmlReader> object is positioned on a leaf node that is not valid for the root level of a document - for example, a white space or attribute node - the <xref:System.Xml.XmlReader> object continues to read until it is positioned on a node that can be used for the root. The <xref:System.Xml.XPath.XPathDocument> begins loading at this point.  
   
 -   To preserve white space, use the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor that accepts an <xref:System.Xml.XmlSpace> object as a parameter.  
   
@@ -228,7 +228,7 @@
       </Parameters>
       <Docs>
         <param name="textReader">The <see cref="T:System.IO.TextReader" /> object that contains the XML data.</param>
-        <param name="reader">To be added.</param>
+        <param name="reader">The <see cref="T:System.IO.TextReader" /> object that contains the XML data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XPath.XPathDocument" /> class from the XML data that is contained in the specified <see cref="T:System.IO.TextReader" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

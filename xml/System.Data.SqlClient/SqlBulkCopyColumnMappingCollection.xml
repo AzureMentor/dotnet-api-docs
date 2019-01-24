@@ -35,7 +35,7 @@
 ## Remarks  
  Column mappings define the mapping between data source and the target table.  
   
- If mappings are not defined—that is, the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is empty—the columns are mapped implicitly based on ordinal position. For this to work, source and target schemas must match. If they do not, an <xref:System.InvalidOperationException> is thrown.  
+ If mappings are not defined - that is, the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is empty - the columns are mapped implicitly based on ordinal position. For this to work, source and target schemas must match. If they do not, an <xref:System.InvalidOperationException> is thrown.  
   
  If the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is not empty, not every column present in the data source has to be specified. Those not mapped by the collection are ignored.  
   
@@ -368,7 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
-      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.Clear " />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -750,7 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
-      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.RemoveAt index" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

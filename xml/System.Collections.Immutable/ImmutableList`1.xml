@@ -906,7 +906,7 @@
         <param name="count">The number of elements in the section to search.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the list that starts at the specified index and contains the specified number of elements.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that starts at index and contains count number of elements, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that starts at index and contains count number of elements, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1094,7 +1094,7 @@
         <param name="count">The number of elements in the section to search.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the list that contains the specified number of elements and ends at the specified index.</summary>
-        <returns>The zero-based index of the last occurrence of item within the range of elements in the list that contains count number of elements and ends at index, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the list that contains count number of elements and ends at index, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1656,7 +1656,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2187,7 +2188,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
-        <value>true if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, false.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2214,7 +2216,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2539,7 +2542,7 @@
         <param name="value">The value of the element to remove from the list.</param>
         <param name="equalityComparer">The comparer to use to compare elements for equality.</param>
         <summary>Removes the element with the specified value from the list.</summary>
-        <returns>Returns a new <see cref="T:System.Collections.Immutable.ImmutableList`1" /> with the specified element removed.</returns>
+        <returns>A new <see cref="T:System.Collections.Immutable.ImmutableList`1" /> with the specified element removed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

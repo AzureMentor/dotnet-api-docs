@@ -124,10 +124,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -301,9 +298,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <Docs>
         <param name="point">A point in <see cref="T:System.Windows.Controls.TextBox" /> coordinate-space for which to return an index.</param>
         <param name="snapToText">
-          <see langword="true" /> to return the nearest index if there is no character at the specified point; <see langword="false" /> to return –1 if there is no character at the specified point.</param>
+          <see langword="true" /> to return the nearest index if there is no character at the specified point; <see langword="false" /> to return -1 if there is no character at the specified point.</param>
         <summary>Returns the zero-based index of the character that is closest to the specified point.</summary>
-        <returns>The index of the character that is closest to the specified point, or –1 if no valid index can be found.</returns>
+        <returns>The index of the character that is closest to the specified point, or -1 if no valid index can be found.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
         <altmember cref="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
@@ -481,7 +478,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <param name="charIndex">The zero-based character index indicating a position from which to search for the next spelling error.</param>
         <param name="direction">One of the <see cref="T:System.Windows.Documents.LogicalDirection" /> values that specifies the direction in which to search for the next spelling error, starting at the specified <paramref name="charIndex" />.</param>
         <summary>Returns the beginning character index for the next spelling error in the contents of the text box.</summary>
-        <returns>The character index for the beginning of the next spelling error in the contents of the text box, or –1 if no next spelling error exists.</returns>
+        <returns>The character index for the beginning of the next spelling error in the contents of the text box, or -1 if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingError(System.Int32)" />
         <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingErrorLength(System.Int32)" />
@@ -650,7 +647,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <Docs>
         <param name="charIndex">The zero-based character index of a position in content to examine for a spelling error.</param>
         <summary>Returns the beginning character index for any spelling error that includes the specified character.</summary>
-        <returns>The beginning character index for any spelling error that includes the character specified by <paramref name="charIndex" />, or –1 if the specified character is not part of a spelling error.</returns>
+        <returns>The beginning character index for any spelling error that includes the character specified by <paramref name="charIndex" />, or -1 if the specified character is not part of a spelling error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,10 +665,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -680,7 +674,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       </ReturnValue>
       <Docs>
         <summary>Gets the total number of lines in the text box.</summary>
-        <value>The total number of lines in the text box, or –1 if layout information is not available.</value>
+        <value>The total number of lines in the text box, or -1 if layout information is not available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1149,10 +1143,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1192,10 +1183,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1239,10 +1227,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1281,10 +1266,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

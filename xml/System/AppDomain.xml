@@ -55,6 +55,9 @@
   
 -   If an assembly is loaded into the default application domain, it cannot be unloaded from memory while the process is running. However, if you open a second application domain to load and execute the assembly, the assembly is unloaded when that application domain is unloaded. Use this technique to minimize the working set of long-running processes that occasionally use large DLLs.  
   
+ > [!NOTE]
+ >  On .NET Core, the <xref:System.AppDomain> implementation is limited by design and does not provide isolation, unloading, or security boundaries. For .NET Core, there is exactly one <xref:System.AppDomain>. Isolation and unloading are provided through <xref:System.Runtime.Loader.AssemblyLoadContext>. Security boundaries should be provided by process boundaries and appropriate remoting techniques.
+ 
  Multiple application domains can run in a single process; however, there is not a one-to-one correlation between application domains and threads. Several threads can belong to a single application domain, and while a given thread is not confined to a single application domain, at any given time, a thread executes in a single application domain.  
   
  Application domains are created using the <xref:System.AppDomain.CreateDomain%2A> method. <xref:System.AppDomain> instances are used to load and execute assemblies (<xref:System.Reflection.Assembly>). When an <xref:System.AppDomain> is no longer in use, it can be unloaded.  
@@ -422,7 +425,7 @@
  For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property returns the assembly name before policy is applied.  
   
 > [!IMPORTANT]
->  If more than one event handler is registered for this event, the event handlersarecalled in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.  
+>  If more than one event handler is registered for this event, the event handlers are called in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.
   
  For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
@@ -874,6 +877,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="friendlyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Method not supported on .NET Core.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <altmember cref="P:System.AppDomain.FriendlyName" />
       </Docs>
@@ -6695,7 +6699,7 @@
  Beginning with the .NET Framework version 2.0, this event is raised in each application domain that registers an event handler.  
   
 > [!NOTE]
->  The total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) method with the [OPR_ProcessExit](~/docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) enumeration value.  
+>  In .NET Framework, the total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) method with the [OPR_ProcessExit](~/docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) enumeration value. This time limit does not exist in .NET Core.  
   
  In the .NET Framework versions 1.0 and 1.1, this event is raised only in the default application domain, and only if an event handler is registered in the default application domain.  
   
@@ -7956,7 +7960,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken — such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled.  
+ This event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken - such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled.  
   
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, application termination and debugging options are reported to the user before this event is raised, rather than after.  

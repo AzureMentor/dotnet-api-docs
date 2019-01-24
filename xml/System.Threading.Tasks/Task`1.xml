@@ -648,7 +648,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <Docs>
         <param name="continuationAction">An action to run when the <see cref="T:System.Threading.Tasks.Task`1" /> completes. When run, the delegate is   passed the completed task and the caller-supplied state object as arguments.</param>
         <param name="state">An object representing data to be used by the continuation action.</param>
-        <summary>Creates a continuation that that is passed state information and that executes when the target <see cref="T:System.Threading.Tasks.Task`1" /> completes.</summary>
+        <summary>Creates a continuation that is passed state information and that executes when the target <see cref="T:System.Threading.Tasks.Task`1" /> completes.</summary>
         <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1369,7 +1369,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
 ## Remarks  
  The returned <xref:System.Threading.Tasks.Task%601> will not be scheduled for execution until the current task has completed, whether it completes due to running to completion successfully, faulting due to an unhandled exception, or exiting out early due to being canceled.  
   
- The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>..  
+ The `continuationFunction`, when executed, should return a <xref:System.Threading.Tasks.Task%601>. 
   
  ]]></format>
         </remarks>
